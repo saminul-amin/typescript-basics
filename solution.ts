@@ -61,5 +61,28 @@ function processValue(value: string | number): number {
   return typeof value === "string" ? value.length : value * 2;
 }
 
-console.log(processValue("hello")); // Output: 5
-console.log(processValue(10)); // Output: 20
+// console.log(processValue("hello")); // Output: 5
+// console.log(processValue(10)); // Output: 20
+
+interface Product {
+  name: string;
+  price: number;
+}
+
+function getMostExpensiveProduct(products: Product[]): Product | null {
+  if (products.length === 0) return null;
+  let ans: Product = products[0];
+  for (const product of products)
+    if (product.price > ans.price) ans = product;
+
+  return ans;
+}
+
+const products = [
+  { name: "Pen", price: 10 },
+  { name: "Notebook", price: 25 },
+  { name: "Bag", price: 50 },
+];
+
+console.log(getMostExpensiveProduct(products));
+// Output: { name: "Bag", price: 50 }
