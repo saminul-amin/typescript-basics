@@ -122,8 +122,8 @@ The sweet spot emerges when the cost of adding types is outweighed by the time s
 Have questions about TypeScript? Want to complain about JavaScript? Let's chat!
 
 **Contact me:**  
-📧 Email: [saminul.amin@gmail.com](mailto:saminul.amin@gmail.com)
-🔗 LinkedIn: [Md. Saminul Amin](https://www.linkedin.com/in/md-saminul-amin-91605730a/)
+📧 Email: [saminul.amin@gmail.com](mailto:saminul.amin@gmail.com)   
+🔗 LinkedIn: [Md. Saminul Amin](https://www.linkedin.com/in/md-saminul-amin-91605730a/)    
 🐱 GitHub: [@saminul-amin](https://github.com/saminul-amin)
 
 ---
@@ -133,7 +133,8 @@ Built with:
 - Several gallons of coffee ☕  
 - Occasional tears of frustration 😭  
 - Triumphant moments of "it finally compiles!" 🎉  
-- Took help from [chat.deepseek.com](https://chat.deepseek.com/)
+
+I have taken help from [Deepseek](https://chat.deepseek.com/), an AI chatbot.
 
 **"Made with *love*, *hate*, and *semicolons* by Samin"** 
 
