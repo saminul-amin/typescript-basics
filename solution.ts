@@ -72,8 +72,7 @@ interface Product {
 function getMostExpensiveProduct(products: Product[]): Product | null {
   if (products.length === 0) return null;
   let ans: Product = products[0];
-  for (const product of products)
-    if (product.price > ans.price) ans = product;
+  for (const product of products) if (product.price > ans.price) ans = product;
 
   return ans;
 }
@@ -84,5 +83,33 @@ const products = [
   { name: "Bag", price: 50 },
 ];
 
-console.log(getMostExpensiveProduct(products));
+// console.log(getMostExpensiveProduct(products));
 // Output: { name: "Bag", price: 50 }
+
+enum Day {
+  Monday,
+  Tuesday,
+  Wednesday,
+  Thursday,
+  Friday,
+  Saturday,
+  Sunday,
+}
+
+function getDayType(day: Day): string {
+  return day === Day.Saturday || day === Day.Sunday ? "Weekend" : "Weekday";
+}
+
+// console.log(getDayType(Day.Monday));   // Output: "Weekday"
+// console.log(getDayType(Day.Sunday));   // Output: "Weekend"
+
+async function squareAsync(n: number): Promise<number> {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        n < 0 ? reject(new Error("Negative number not allowed")) : resolve(n * n);
+      }, 5000);
+    });
+  }
+
+  console.log(squareAsync(4).then(console.log));        // Output after 1s: 16
+  console.log(squareAsync(-3).catch(console.error));    // Output: Error: Negative number not allowed
